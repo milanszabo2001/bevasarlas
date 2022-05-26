@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Lista</title>
+    <style>
+        body{
+            width: 350px;
+        }
+        ul{
+            padding-inline-start: 0px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="container border rounded bg-success text-center">
+        <h3 class="text-white" >Bevásárlandó termék:</h3>
+        <input id="nev" type="text"><br>
+        <input id="mennyiseg" type="text"><br>
+        <input type="button" class="mt-2 mb-2 border btn btn-success" value="hozzáad" onclick="add()">
+    
+    </div>
+
+    <div class="container mt-3 border bg-success text-center">
+        <h3 class="text-white ">Termékek</h3>
+        <ul id="lista"></ul>
+        <input type="button" value="összes törlése" class="btn btn-danger" onclick="torles()">
+    </div>
+</div>
+    <script src="data.js"></script>
+</body>
+</html>
